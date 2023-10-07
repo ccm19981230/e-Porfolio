@@ -5,6 +5,7 @@ var menulistholder = document.getElementById("menu_list");
 var burger_btn_holder = document.getElementById("burger_btn");
 summaryholder.addEventListener("click", onClickFunction);
 
+// Drop-down Menu On Click Effect
 function onClickFunction() {
   if (on == true) {
     burger_btn_holder.style.filter = "invert(100%)";
@@ -62,8 +63,7 @@ function checkBoxes() {
   });
 }
 
-
-// Fix the bug of sticky while it under a parent element with attitude overflow-x: hidden
+// Fix the bug of sticky while it is under a parent element with attitude overflow-x: hidden
 // Drop-down Menu
 var rect = detailsholder.getBoundingClientRect();
 var offset = detailsholder.offsetTop;
@@ -76,12 +76,12 @@ function scrollCheck() {
   if (window.pageYOffset > offset) {
     detailsholder.style.position = "fixed";
     detailsholder.style.top = 0;
-    menutitleholder.style.display = "block"; 
-    summaryholder.style["justify-content"] = "space-between"; 
+    menutitleholder.style.display = "block";
+    summaryholder.style["justify-content"] = "space-between";
   } else if (window.pageYOffset <= offset) {
     detailsholder.style.position = "relative";
-    menutitleholder.style.display = "none"; 
-    summaryholder.style["justify-content"] = "right"; 
+    menutitleholder.style.display = "none";
+    summaryholder.style["justify-content"] = "right";
   }
 }
 
@@ -100,3 +100,18 @@ function scrollCheckMainMenu() {
     mainmenuholder.style.position = "relative";
   }
 }
+
+
+// Skills item
+var skill_itemholder = document.getElementsByClassName("skill_item");
+var skill_imgholder = document.getElementsByClassName("skill_img");
+
+for (const item in skill_itemholder) {
+  skill_itemholder[item].addEventListener("mouseover", () => {
+    skill_imgholder[item].style.transform = "rotateY(-180deg)";
+  });
+  skill_itemholder[item].addEventListener("mouseout", () => {
+    skill_imgholder[item].style.transform = "rotateY(0deg)";
+  });
+}
+
