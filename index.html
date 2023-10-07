@@ -8,6 +8,8 @@
   <link rel="icon" type="image/x-icon" href="/images/rexchan_logo.png">
   <link href="style.css" rel="stylesheet" type="text/css" />
   <script src="https://kit.fontawesome.com/cd897b0f6e.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://unpkg.com/typewriter-effect@2.3.1/dist/core.js"></script>
+
 </head>
 
 <body>
@@ -24,6 +26,7 @@
       <p class="personal_info_item">📧 Email: <a href="mailto: ccm.rex17@gmail.com" id="email">ccm.rex17@gmail.com</a>
       </p>
     </div>
+    <p id='active-words'>I am a <span id="app"></span></p>
   </div>
   <!-- Animation -->
   <div id="ani_container">
@@ -49,14 +52,14 @@
       <a class="menu_a" href="#skills">
         <p class="drop_item">Skills</p>
       </a>
+      <a class="menu_a" href="#experience">
+        <p class="drop_item">Experience</p>
+      </a>
       <a class="menu_a" href="#education">
         <p class="drop_item">Education</p>
       </a>
       <a class="menu_a" href="#vocational">
         <p class="drop_item">Training</p>
-      </a>
-      <a class="menu_a" href="#experience">
-        <p class="drop_item">Experience</p>
       </a>
       <a class="menu_a" href="#webpages">
         <p class="drop_item">Webpage</p>
@@ -75,15 +78,15 @@
     <a href="#" id="head_btn" class="item large_a">
       <p>Profile</p>
     </a>
-    <a href="#education" id="edu_btn" class="item large_a">
+    <a href="#experience" id="edu_btn" class="item large_a">
       <p>Resume</p>
     </a>
     <div class="item dropdown">
       <p>Resume</p>
       <div class="dropdown-content">
+        <a href="#experience">Experience</a>
         <a href="#education">Education</a>
         <a href="#vocational">Training</a>
-        <a href="#experience">Experience</a>
       </div>
     </div>
     <a href="#webpages" class="item large_a">
@@ -112,7 +115,7 @@
     </div>
     <div class="row">
       <div class="left_column">
-        <p>Highest Level of Education: </p>
+        <p>IT Relevant Education: </p>
       </div>
       <div id="flex_r_col" class="right_column">
         <a href="https://drive.google.com/file/d/13zpk0Pmk11AGUuHHFU3PLXeGV05Qgpri/view?usp=sharing" class="no_ul cert"
@@ -157,43 +160,44 @@
     <h3>Technical Skills</h3>
     <div class="skill_row">
       <div class="skill_item">
-        <div class="skill_item_element" height="140px"><img src="images/frontend_web.svg" height="140px"></div>
+        <div class="skill_item_element" height="140px"><img class=" skill_img" src="images/frontend_web.svg"
+            height="140px"></div>
         <div class="skill_item_element" height="140px">
           <h4>💻 HTML, CSS, JavaScript</h4>
         </div>
       </div>
       <div class="skill_item">
-        <div class="skill_item_element"><img src="images/data_processing.svg" height="140px"></div>
+        <div class="skill_item_element"><img class="skill_img" src="images/data_processing.svg" height="140px"></div>
         <div>
-          <h4>🌐 PHP, XAMPP</h4>
+          <h4>🌐 PHP, XAMPP, Magento</h4>
         </div>
       </div>
       <div class="skill_item">
-        <div class="skill_item_element"><img src="images/server.svg" height="140px"></div>
+        <div class="skill_item_element"><img class="skill_img" src="images/server.svg" height="140px"></div>
         <div>
           <h4>🗄️ MySQL, Oracle SQL</h4>
         </div>
       </div>
       <div class="skill_item">
-        <div class="skill_item_element"><img src="images/gaming.svg" height="140px"></div>
+        <div class="skill_item_element"><img class="skill_img" src="images/gaming.svg" height="140px"></div>
         <div>
           <h4>🎮 Unity, C#, DirectX, C++</h4>
         </div>
       </div>
       <div class="skill_item">
-        <div class="skill_item_element"><img src="images/android.svg" height="140px"></div>
+        <div class="skill_item_element"><img class="skill_img" src="images/android.svg" height="140px"></div>
         <div>
           <h4>📱 Android Studio, Java</h4>
         </div>
       </div>
       <div class="skill_item">
-        <div class="skill_item_element"><img src="images/digital_sketching.svg" height="140px"></div>
+        <div class="skill_item_element"><img class="skill_img" src="images/digital_sketching.svg" height="140px"></div>
         <div>
           <h4>📷 Adobe Photoshop, Figma</h4>
         </div>
       </div>
       <div class="skill_item">
-        <div class="skill_item_element"><img src="images/sculpting.svg" height="140px"></div>
+        <div class="skill_item_element"><img class="skill_img" src="images/sculpting.svg" height="140px"></div>
         <div>
           <h4>🗿 Autodesk 3Ds Max</h4>
         </div>
@@ -203,49 +207,62 @@
     <h3>Soft Skills</h3>
     <div class="skill_row">
       <div class="skill_item">
-        <div class="skill_item_element" height="140px"><img src="images/teamwork.svg" width="250px"></div>
+        <div class="skill_item_element" height="140px"><img class="skill_img" src="images/teamwork.svg" width="250px">
+        </div>
         <div class="skill_item_element">
           <h4>👨‍👩‍👧‍👦 Teamwork</h4>
         </div>
       </div>
       <div class="skill_item">
-        <div class="skill_item_element"><img src="images/conversation.svg" height="140px"></div>
+        <div class="skill_item_element"><img class="skill_img" src="images/conversation.svg" height="140px"></div>
         <div class="skill_item_element">
           <h4>💬 Communication</h4>
         </div>
       </div>
       <div class="skill_item">
-        <div class="skill_item_element"><img src="images/time_management.svg" height="140px"></div>
+        <div class="skill_item_element"><img class="skill_img" src="images/time_management.svg" height="140px"></div>
         <div class="skill_item_element">
           <h4>⌚️ Time Management</h4>
         </div>
       </div>
     </div>
   </div>
-  <!-- Hobbies -->
-  <br id="hobbies">
+
+  <br id="experience">
   <br>
-  <h2 class="titles">Hobbies</h2>
-  <div class="container content">
-    <div class="skill_row">
-      <div class="skill_item">
-        <div class="skill_item_element" height="140px"><img src="images/drawing.svg" width="250px"></div>
-        <div class="skill_item_element">
-          <h4>🎨 Painting</h4>
-        </div>
-      </div>
-      <div class="skill_item">
-        <div class="skill_item_element"><img src="images/programming.svg" height="120px"></div>
-        <div class="skill_item_element">
-          <h4>👾 Game Developing</h4>
-        </div>
-      </div>
-      <div class="skill_item">
-        <div class="skill_item_element"><img src="images/books.svg" height="120px"></div>
-        <div class="skill_item_element">
-          <h4>📚 Reading</h4>
-        </div>
-      </div>
+  <!-- Experience -->
+  <h2 class="titles">Experience</h2>
+  <div class="container par_box exp_box">
+    <div class="cert_row">
+      <p>Junior Web Developer</p>
+      <p class="employment_date">July 2023 - present</p>
+    </div>
+    <p class="company">CLEARgo e-Business Consultancy Limited</p>
+    <div class="row qual_row">
+      <ul>
+        <li>Responsible for programming and development works for web project</li>
+        <li>Participate in system design, coding, maintenance of e-Commerce and web projects for clients (e.g. Jacobson
+          Pharma) and the Company (e.g. CHATTERgo)</li>
+        <li>Perform system test and prepare technical documents</li>
+        <li>Gather and analyze client demands</li>
+        <li>Established concepts of custom themes and modules to extend or override the layout in Magento 2</li>
+      </ul>
+    </div>
+  </div>
+  <br />
+  <div class="container par_box exp_box">
+    <div class="cert_row">
+      <p>Graphic Designer</p>
+      <p class="employment_date">October - November 2022</p>
+    </div>
+    <p class="company">Penker, Blueprint Company Limited</p>
+    <div class="row qual_row">
+      <ul>
+        <li>Designed creative decoration graphic of oversize casual sweatshirt for low-priced
+          clothing brand</li>
+        <li>The experience of gathering and analyzing client demands, designing and prototyping solutions, and
+          implementing and amending the chosen solutions are transferable to development field</li>
+      </ul>
     </div>
   </div>
 
@@ -264,15 +281,15 @@
     <p><b>Academic Honours: </b>Dean's List for All Semesters</p>
     <p><b>Web Development: </b>Database Management (Grade A), Internet Programming (A-), e-Commerce and Web Application
       Development (B+)</p>
-    <p><b>Game Development and 3D Modeling: </b>Integrated 2D and 3D Graphics Programming (Grade A-), Game Design and
+    <p><b>Game Development: </b>Integrated 2D and 3D Graphics Programming (A-), Game Design and
       Construction (B+), Logic and Artificial Intelligence in Games (B+), Introduction to 3D Animation (B+), Mathematics
       in
       Interactive Media (B+), Rapid Prototyping Tools for Game Development (B+)</p>
-    <p><b>Computer Science: </b>Computer Network (Grade A-), Data
+    <p><b>Computer Science: </b>Computer Network (A-), Data
       Structures
       and Algorithms (B+), Discrete Mathematics and Algorithms (B+), Operating Systems (B+)</p>
     <ul>
-      <li>Learned web application development skills included JavaScript, PHP, HTML and MySQL, as well as C# for Unity
+      <li>Learned web application development skills included JavaScript, jQuery, PHP and MySQL, as well as C# for Unity
         game engine
         and Java for Android Studio, etc. </li>
       <li>Built-up concepts of object-oriented programming (OOP), UML, data structures and algorithms</li>
@@ -353,6 +370,21 @@
     </div>
     <p class="school">Generation Hong Kong & Career and Life Adventure Planning Programme for Youth, The Hong Kong
       Jockey Club (CLAP@JC)</p>
+    <a href="https://drive.google.com/file/d/1AckDKr6MWblabsA3J9tkxUiLN6b3c1Tt/view?usp=sharing" class="no_ul cert"
+      style="text-align: right;" target="_blank">
+      <p><svg width="17px" height="17px" viewBox="0 0 87.3 78" xmlns="http://www.w3.org/2000/svg">
+          <path d="m6.6 66.85 3.85 6.65c.8 1.4 1.95 2.5 3.3 3.3l13.75-23.8h-27.5c0 1.55.4 3.1 1.2 4.5z"
+            fill="#0066da" />
+          <path d="m43.65 25-13.75-23.8c-1.35.8-2.5 1.9-3.3 3.3l-25.4 44a9.06 9.06 0 0 0 -1.2 4.5h27.5z"
+            fill="#00ac47" />
+          <path d="m73.55 76.8c1.35-.8 2.5-1.9 3.3-3.3l1.6-2.75 7.65-13.25c.8-1.4 1.2-2.95 1.2-4.5h-27.502l5.852 11.5z"
+            fill="#ea4335" />
+          <path d="m43.65 25 13.75-23.8c-1.35-.8-2.9-1.2-4.5-1.2h-18.5c-1.6 0-3.15.45-4.5 1.2z" fill="#00832d" />
+          <path d="m59.8 53h-32.3l-13.75 23.8c1.35.8 2.9 1.2 4.5 1.2h50.8c1.6 0 3.15-.45 4.5-1.2z" fill="#2684fc" />
+          <path d="m73.4 26.5-12.7-22c-.8-1.4-1.95-2.5-3.3-3.3l-13.75 23.8 16.15 28h27.45c0-1.55-.4-3.1-1.2-4.5z"
+            fill="#ffba00" />
+        </svg> Certificate</p>
+    </a>
     <ul>
       <li>A 13-week training for frontend web development skills including HTML, CSS, JavaScript, React and Bootstrap
       </li>
@@ -493,26 +525,6 @@
     </ul>
   </div>
 
-  <br id="experience">
-  <br>
-  <!-- Experience -->
-  <h2 class="titles">Experience</h2>
-  <div class="container par_box exp_box">
-    <div class="cert_row">
-      <p>Graphic Designer</p>
-      <p class="grad_date">October - November 2022</p>
-    </div>
-    <p class="school">Penker, Blueprint Co., Ltd.</p>
-    <div class="row qual_row">
-      <ul>
-        <li>Designed creative decoration graphic of oversize casual sweatshirt for low-priced
-          clothing brand</li>
-        <li>The experience of gathered and analyzed client demands, designing and prototyping solutions, and
-          implemented and amended the chosen solutions are transferable to development field</li>
-      </ul>
-    </div>
-  </div>
-
   <br id="webpages">
   <br>
   <!-- Webpages -->
@@ -521,20 +533,6 @@
     JavaScript and
     Bootstrap. </p>
   <h3 class="content">Individual Projects</h3>
-  <p class="content">The following is a Bootstrap slider built with React and implemented hook like use state to change
-    to color
-    of all images. </p>
-  <div class="iframe_box content">
-    <iframe align="center" width="95%" height="400vh" src="https://reactpropsstate-1.rexchan1.repl.co/" frameborder="no"
-      border="0" marginwidth="0" marginheight="0" scrolling="yes" style="">Your browser does not
-      support
-      iframe. </iframe>
-    <br>
-    <br>
-    <a href="https://reactpropsstate-1.rexchan1.repl.co/" target="_blank">
-      <p class="caption"><i>Bootstrap & React</i>, June 2023</p>
-    </a>
-  </div>
   <p class="content">The following is a Chrome extension displays weather forecast data fetching from the Hong Kong
     Observatory
     (HKO). </p>
@@ -565,7 +563,7 @@
   </div>
   <br>
   <p class="content">The following is a eLearning page which can change the language of each HTML element's inner
-    text or HTML and save the choosed lanugage to local storage. When user open this page next time, the page will show
+    text or HTML and save the chosen lanugage to local storage. When user open this page next time, the page will show
     the content of the language the user chose last time. </p>
   <div class="iframe_box content">
     <iframe align="center" width="95%" height="400vh" src="https://historyquestionbank.rexchan1.repl.co/"
@@ -596,7 +594,25 @@
   <br>
   <br>
   <h3 class="content">Group Project</h3>
-  <p class="content">The following is a responsive iPortfolio demo.</p>
+  <p class="content">The following is a movie website fetching data from outside by using axios and hooks like useEffect
+    and useState. </p>
+  <p class="content">My works are the interactive slider of top-rated movies and containers with stars rating and heart
+    buttons saving
+    favroite movies to local storage as wel as filters for adult contents, languages and regions. </p>
+  <div class="iframe_box content">
+    <a href="https://rexmovieweb.netlify.app/" target="_blank">
+      <img class="graphic" src="./images/movie-preview.png" alt="preview">
+    </a>
+    <br>
+    <br>
+    <a href="https://github.com/movieWeb01/movieweb" target="_blank">
+      <p class="caption"><i>React Movie Website</i>, June 2023</p>
+      <br>
+      <p class="caption">Rex, Calvin, Michael, Dickson</p>
+    </a>
+  </div>
+  <br />
+  <p class="content">The following is iPortfolio developed by HTML, CSS and Bootstrap.</p>
   <div class="iframe_box content">
     <iframe align="center" width="95%" height="400vh" src="https://iportfoliover20.rexchan1.repl.co/" frameborder="no"
       border="0" marginwidth="0" marginheight="0" scrolling="yes" style="">Your browser does not
@@ -653,10 +669,10 @@
   </div>
   <h3 class="content">Group Project</h3>
   <div class="iframe_box content">
-    <iframe src="https://www.youtube.com/embed/YUi8Yh_BZog" title="YouTube video player" frameborder="0"
+    <iframe src="https://www.youtube.com/embed/W4_rUHyA6WE" title="YouTube video player" frameborder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
       class="iframe" allowfullscreen></iframe>
-    <a href="https://youtu.be/YUi8Yh_BZog" target="_blank">
+    <a href="https://youtu.be/W4_rUHyA6WE" target="_blank">
       <p class="caption"><i>The Last Survivor</i>, 2017-19</p>
       <br>
       <p class="caption">Members: Andy KU, Rex CHAN</p>
@@ -711,7 +727,11 @@
     balance.</p>
   <div class="iframe_box content">
     <a href="https://i.imgur.com/o8fxskf.jpeg" target="_blank">
-      <img class="graphic" src="https://i.imgur.com/o8fxskf.jpeg" alt="poster">
+      <img class="graphic" src="https://i.imgur.com/o8fxskf.jpeg" alt="characterdesign">
+    </a>
+    <br /><br />
+    <a href="https://i.imgur.com/Khj605q.jpg" target="_blank">
+      <img class="graphic" src="https://i.imgur.com/Khj605q.jpg" alt="characterdesign">
     </a>
     <a href="https://i.imgur.com/o8fxskf.jpeg" target="_blank">
       <p class="caption"><i>Character Anatomy</i>, 2022</p>
@@ -763,12 +783,27 @@
   <!-- Footer -->
   <div class="footer">
     <p class="footer_child">© 2017-23 Chan Cheuk Man All Rights Reserved</p>
-    <p class="footer_child">Last Modified: 5 June 2023</p>
+    <p class="footer_child">Last Modified: 8 October 2023</p>
   </div>
 
   <!-- Top Button -->
-  <button class="top_btn" onclick="location.href='#';">↑</button>
+  <button id="top_btn" onclick="location.href='#';">↑</button>
 </body>
 <script src="script.js"></script>
+<script type="text/javascript">
+  var app = document.getElementById('app');
+  var typewriter = new Typewriter(app, {
+    loop: true
+  });
+  typewriter.typeString('<span style="font-family: Georgia, serif; color: darkblue; font-weight: bold; ">developer with passion. </span>')
+    .pauseFor(2500)
+    .deleteAll()
+    .typeString('<span style="text-decoration: underline 2px darkcyan; font-style: italic;"><em>self-motivated developer. </span>')
+    .pauseFor(2500)
+    .deleteAll()
+    .typeString('<span style="font-style: italic; font-weight: bold; ">developer with an aesthetic sense. </span>')
+    .pauseFor(2500)
+    .start();
+</script>
 
 </html>
