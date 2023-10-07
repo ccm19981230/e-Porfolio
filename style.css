@@ -30,6 +30,11 @@ a{
   text-decoration: none;
 }
 
+#active-words{
+  font-size: 20px; 
+  margin: 10px 0; 
+}
+
 .titles{
   color: darkblue; 
   font-weight: bold;
@@ -325,8 +330,8 @@ li{
   transition: 0.2s; 
 }
 
-.skill_item:hover{
-  transform: scale(1.08);
+.skill_img{
+  transition: 0.4s; 
 }
 
 .skill_item_element{
@@ -352,6 +357,15 @@ li{
   transform: translateX(0);
 }
 
+.exp_box, .edu_box, .tra_box{
+  border-radius: 0.4em;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; 
+}
+
+.exp_box{
+  border-left: 7px solid purple;
+}
+
 .edu_box{
   border-left: 7px solid skyblue;
 }
@@ -360,11 +374,7 @@ li{
   border-left: 7px solid darkcyan;
 }
 
-.exp_box{
-  border-left: 7px solid purple;
-}
-
-.cert_row, .school{
+.cert_row, .school, .company{
   font-weight: bold; 
 }
 
@@ -373,11 +383,11 @@ li{
   justify-content: space-between; 
 }
 
-.grad_date{
+.grad_date, .employment_date{
   text-align: right;
 }
 
-.school{
+.school, .company{
   font-size: 14px;
 }
 
@@ -414,7 +424,7 @@ li{
   transition: 0.4s;
 }
 
-.top_btn{
+#top_btn{
   -webkit-touch-callout: none; 
     -webkit-user-select: none; 
      -khtml-user-select: none; 
@@ -435,9 +445,9 @@ li{
   justify-content: center; 
   align-items: center; 
   cursor: default;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border: none;
   z-index: 200;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 /*=======Slider=======*/
