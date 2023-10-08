@@ -486,7 +486,7 @@ li{
 .sliderbox {
   width: 25vw;
   object-fit: cover;
-  border-radius: 3vw;
+  border-radius: 1.5em;
   margin-left: 1.5vw;
   margin-right: 1.5vw;
   transition: 0.4s;
