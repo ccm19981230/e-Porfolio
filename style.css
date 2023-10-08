@@ -463,8 +463,8 @@ li{
   max-width: 100%;
   overflow: hidden;
   z-index: 10;
-  padding-top: 3vh;
-  padding-bottom: 3vh;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
 }
 
 #photobanner {
