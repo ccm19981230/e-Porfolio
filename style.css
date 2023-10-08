@@ -393,6 +393,7 @@ li{
 
 .iframe_box{
   display: flex; 
+  flex-direction: column; 
   justify-content: center; 
   flex-wrap: wrap;
   padding-top: 15px; 
@@ -419,8 +420,15 @@ li{
   margin: 2%;
 }
 
-.graphic{
+.graphic-v{
+  height: 50vw;
+  max-height: 750px; 
+  transition: 0.4s;
+}
+
+.graphic-h{
   width: 80vw;
+  max-width: 1000px;
   transition: 0.4s;
 }
 
@@ -484,7 +492,7 @@ li{
   transition: 0.4s;
 }
 
-.sliderbox:hover, .graphic:hover {
+.sliderbox:hover, .graphic-v:hover, .graphic-h:hover {
   -webkit-filter: drop-shadow(8px 8px 10px gray);
   -moz-filter: drop-shadow(8px 8px 10px gray);
   -ms-filter: drop-shadow(8px 8px 10px gray);
